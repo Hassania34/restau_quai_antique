@@ -3,5 +3,17 @@
 #    controller: App\Controller\DefaultController::index
 
 app_restau_quai_antique:
-    path: /accueil
+    path: /
     controller: App\Controller\AccueilController::accueil
+auth_restau_quai_antique:
+    path: /connexion
+    controller: App\Controller\ConnexionController::connexion
+carte_restau_quai_antique:
+    path: /carte
+    controller: App\Controller\CarteController::carte
+reserver_restau_quai_antique:
+    path: /reserver
+    controller: App\Controller\ReservationController::reserver
+apropos_restau_quai_antique:
+    path: /apropos
+    controller: App\Controller\AproposController::apropos
