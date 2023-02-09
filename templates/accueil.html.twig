@@ -1,0 +1,189 @@
+{# templates/lucky/number.html.twig #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1">
+    <script src="script.js" defer></script>
+    <title>Quai Antique</title>
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet"/>
+    
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <p><span>Quai</span>Antique</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#A-propos">A propos</a></li>
+            <li><a href="Carte.html">Carte</a></li>
+            <li><a href="#Reserver">Reserver</a></li>
+            <li><a href="#Connexion">Connexion</a></li>
+        </ul>
+
+        <!-- menu responsive -->
+        <div class="toggle_menu"></div>
+    </header>
+
+    <!-- section acceuil home -->
+
+    
+
+       <!-- section  plat -->
+
+       <section id="plats">
+           <h4 class="mini_title">Nos plats</h4>
+           <h2 class="title">Incontournables</h2>
+           <div class="dishes">
+               <div class="dish">
+                   <img src="{{ asset('images/images/Images/Plats-/1.png')}}">
+                   <img src="{{ asset('images/images/logo.png') }}" alt="Symfony!"/>
+                   <p>Lasagnes</p>
+                   <h2>Les lasagnes à toutes les sauces</h2>
+                   <a href="#">Réserver</a>
+               </div>
+               <div class="dish">
+                    <img src="{{ asset('images/images/Images/Plats-/2.png')}}">
+                    <p>Souris d'agneau</p>
+                    <h2>Cuite pendant 8h dans du vin</h2>
+                    <a href="#">Reserver</a>
+               </div>
+               <div class="dish">
+                    <img src="{{ asset('images/images/Images/Plats-/3.png')}}">
+                    <p>La raclette</p>
+                    <h2>charcuteries françaises</h2>
+                    <a href="#">Réserver</a>
+                </div>
+                <div class="dish">
+                        <img src="{{ asset('images/images/Images/Plats-/4.png')}}">
+                        <p>Variétés de poissons</p>
+                        <h2>Saumons, colin, </h2>
+                        <a href="#">Réserver</a>
+                </div>
+           </div>
+           </div>
+       </section>
+
+
+       <!-- section menu-->
+
+       <section id="les-menus">
+        <h4 class="mini_title">Nos menus</h4>
+        <h2 class="title">de toutes les saisons</h2>
+        <div class="dishes">
+            <div class="dish">
+                <img src="{{ asset('images/images/Images/CHEF.png')}}">
+                <p>20€</p>
+                <h2>Entrée + plat</h2>
+                <a href="#">Réserver</a>
+            </div>
+            <div class="dish">
+                 <img src="{{ asset('images/images/Images/Plats-/Menus.png')}}">
+                 <p>25€</p>
+                 <h2>Plat + Dessert + café gourmand</h2>
+                 <a href="#">Reserver</a>
+            </div>
+            <div class="dish">
+                 <img src="{{ asset('images/images/Images/Plats/6.png')}}">
+                 <p>50€</p>
+                 <h2>A volonté</h2>
+                 <a href="#">Réserver</a>
+             </div>
+        </div>
+        </div>
+    </section>
+    
+    
+   <section id="Connexion">
+
+    <div class="container">
+        <div>
+            <h1>Connectez vous ou créer un compte</h1>
+        </div>
+    
+        <div class="tab-body" data-id="connexion">
+          <form>
+            <div class="row">
+              <i class="far fa-user"></i>
+              <input type="email" class="input" placeholder="Adresse Mail">
+            </div>
+            <div class="row">
+              <i class="fas fa-lock"></i>
+              <input placeholder="Mot de Passe" type="password" class="input">
+            </div>
+            <a href="#" class="link">Mot de passe oublié ?</a>
+            <button class="btn" type="button"><a href="Connexion.html">Connexion</a></button>
+            
+          </form>
+        </div>
+    
+        <div class="tab-body" data-id="inscription">
+          <form>
+            <div class="row">
+              <i class="far fa-user"></i>
+              <input type="text" class="input" placeholder="Nom prénom">
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <input type="email" class="input" placeholder="Votre mail">
+            </div>
+            <div class="row">
+              <i class="fas fa-lock"></i>
+              <input type="password" class="input" placeholder="Votre Mot de Passe">
+            </div>
+            <button class="btn" type="button">Inscription</button>
+          </form>
+        </div>
+    
+        <div class="tab-footer">
+          <a class="tab-link active" data-ref="connexion" href="javascript:void(0)">Connexion</a>
+          <a class="tab-link" data-ref="inscription" href="javascript:void(0)">Inscription</a>
+        </div>
+      </div>
+        
+      </section>
+
+
+      <!-- footer -->
+      <footer>
+          <div class="services_list">
+              <div class="service">
+                  <img src="{{ asset('images/images/clock.png" alt="')}}">
+                  <h2>Ouverture</h2>
+                  <p>10h30 à 23h45</p>
+                  <p>23h45 à 9h30</p>
+              </div>
+
+              <div class="service">
+                <img src="{{ asset('images/images/pin.png" alt="')}}">
+                <h2>Adresses</h2>
+                <p>France-Savoie</p>
+            </div>
+            <div class="service">
+                <img src="{{ asset('images/images/email.png" alt="')}}">
+                <h2>Emails</h2>
+                <p>contact</p>
+                <p>your.dish@gmail.com</p>
+            </div>
+            <div class="service">
+                <img src="{{ asset('images/images/call.png" alt="')}}">
+                <h2>Numbers</h2>
+                <p>+33 54454544</p>
+                <p>+33 45687515</p>
+            </div>
+            
+            <hr>
+          </div>
+
+      </footer>
+
+
+      <script src="script.js"></script>
+</body>
+</html>
