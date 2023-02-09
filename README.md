@@ -16,4 +16,5 @@ Restaurant Quai Antique Symfony
 symfony server:start
 ```
 
-* Page d'acueil :  https://127.0.0.1:8000/accueil
+* Page d'acueil :  https://127.0.0.1:8000/
+* Page de connexion : https://127.0.0.1:8000/connexion
