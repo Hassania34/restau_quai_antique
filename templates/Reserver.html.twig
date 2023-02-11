@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Poppins:wght@200;300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1">
+    <script src="{{ asset('js/script.js') }}" defer></script>
+    <title>Quai Antique - Reserver</title>
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p><span>Quai</span>Antique</p>
+        </div>
+        <p> Vous pouvez réserver une table</p>
+    </header>
+    
+    <div class="form" data-id="reserver">
+        <form>
+            <div class="row">
+                <i class="far fa-user"></i>
+                <input type="text" class="input" placeholder="Nom prénom">
+            </div>
+            <div class="row">
+                <i class="fas fa-envelope"></i>
+                <input type="email" class="input" placeholder="Votre mail">
+            </div>
+            <div class="row">
+                <i class="fas fa-lock"></i>
+                <input type="date" class="input" placeholder="Choisir une date">
+            </div>
+            <div class="row">
+                <i class="fas fa-lock"></i>
+                <input type="time" class="input" placeholder="Choisir une heure">
+            </div>
+            <div class="row">
+                <i class="fas fa-lock"></i>
+                <input type="text" class="input" placeholder="mentionner vos allergies">
+            </div>
+            <button class="btn" type="button">reserver</button>
+        </form>
+    </div>
+
+</body>
