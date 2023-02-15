@@ -1,0 +1,34 @@
+{% extends "utilisateur/authentification.html.twig" %}
+
+{% block authentification %}
+
+<div class="tab-body active" data-id="inscription">
+    <div class="row">
+        <i class="far fa-user"></i>
+        {{
+        form_widget(form.username,
+        {'attr': {'class': 'input',
+        'placeholder': 'Votre username'}}
+        )
+        }}
+    </div>
+    <div class="row">
+        <i class="fas fa-envelope"></i>
+        {{
+        form_widget(form.mail,
+        {'attr': {'class': 'input',
+        'placeholder': 'Votre mail'}}
+        )
+        }}
+    </div>
+    <div class="row">
+        <i class="fas fa-lock"></i>
+        {{
+        form_widget(form.password,
+        {'attr': {'class': 'input',
+        'placeholder': 'Votre mot de passe'}}
+        )
+        }}
+    </div>
+</div>
+{% endblock %}

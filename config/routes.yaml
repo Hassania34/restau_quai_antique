@@ -5,9 +5,6 @@
 app_restau_quai_antique:
     path: /
     controller: App\Controller\AccueilController::accueil
-auth_restau_quai_antique:
-    path: /connexion
-    controller: App\Controller\ConnexionController::connexion
 carte_restau_quai_antique:
     path: /carte
     controller: App\Controller\CarteController::carte
@@ -17,3 +14,9 @@ reserver_restau_quai_antique:
 apropos_restau_quai_antique:
     path: /apropos
     controller: App\Controller\AproposController::apropos
+utilisateur_inscription:
+    path: /inscription
+    controller: App\Controller\UtilisateurController::inscription   
+utilisateur_connexion:
+    path: /connexion
+    controller: App\Controller\UtilisateurController::connexion 

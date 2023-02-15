@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+{% block body %}
+{{ form_start(form,{'attr': {'style': 'margin-top: 10em;'}}) }}
+<div class="my-custom-class-for-errors">
+    {{ form_errors(form) }}
+</div>
+<section id="Connexion" style>
+
+    <div class="container">
+        <div>
+            <a href="/">
+                <h1>Connectez vous ou créer un compte</h1>
+            </a>
+        </div>
+
+        {% block authentification %}
+
+        {% endblock %}
+        
+        <div class="tab-footer">
+            <a class="tab-link" href="/connexion">Connexion</a>
+            <a class="tab-link" href="/inscription">Inscription</a>
+        </div>
+    </div>
+</section>
+{{ form_end(form) }}
+{% endblock %}

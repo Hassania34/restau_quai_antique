@@ -1,29 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html.twig" %}
+{% block body %}
+<ol class="list-group list-group-numbered">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Poppins:wght@200;300&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1">
-    <script src="{{ asset('js/script.js') }}" defer></script>
-    <title>Quai Antique-Carte</title>
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Entrées au choix</div>
+        Salade
+        Verrines aux crevettes
+        Soupe maison
+        Légumes sautés
+      </div>
+      <span class="badge bg-primary rounded-pill">14€</span>
+    </li>
 
-</head>
-<header>
-    
-</header>
-<body>
-    
-    <div class="presentation">
-        <H1>Découvrez notre carte.</H1>
-        <p>Elle saura vous donner envie</p>
-    </div>
-</body>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Plats au choix</div>
+       Viande avec ses Légumes
+       Poissons grillés et purée
+       
+      </div>
+      <span class="badge bg-primary rounded-pill">25€</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">Desserts</div>
+        Tiramisu aux fraises
+      </div>
+      <span class="badge bg-primary rounded-pill">14</span>
+    </li>
+
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Vins blanc</div>
+          Vin blanc (toutes régions)
+        </div>
+        <span class="badge bg-primary rounded-pill">29€</span>
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Vins rouge</div>
+          Vin rouge (toutes régions)
+        </div>
+        <span class="badge bg-primary rounded-pill">29€</span>
+      </li>
+
+  </ol>
+{% endblock %}

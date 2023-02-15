@@ -1,0 +1,27 @@
+{% extends "utilisateur/authentification.html.twig" %}
+
+{% block authentification %}
+
+<div class="tab-body active" data-id="connexion">
+        <div class="row">
+            <i class="far fa-user"></i>
+            {{
+                form_widget(form.mail,
+                {'attr': {'class': 'input',
+                'placeholder': 'Votre mail'}}
+                )
+                }}
+        </div>
+        <div class="row">
+            <i class="fas fa-lock"></i>
+            {{
+                form_widget(form.password,
+                {'attr': {'class': 'input',
+                'placeholder': 'Votre mot de passe'}}
+                )
+                }}
+            </div>
+        <a href="#" class="link">Mot de passe oublié ?</a>
+        <button class="btn" type="button"><a href="Connexion.html">Connexion</a></button>
+</div>
+{% endblock %}
