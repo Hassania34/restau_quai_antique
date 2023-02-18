@@ -2,7 +2,52 @@
 
 {% block body %}
 <section id="reservation">
-    {{ form(form) }}
+    {{ form_start(form,{'attr': {'style': ''}}) }}
+    <div class="my-custom-class-for-errors">
+        {{ form_errors(form) }}
+    </div>
+
+    <div class="container" style="margin: auto">
+        <div>
+            <a href="/">
+                <h1>Réserver votre table</h1>
+            </a>
+        </div>
+
+
+        <div class="tab-body active" data-id="connexion">
+            <div class="row">
+                <i class="far fa-user"></i>
+                {{
+                form_widget(form.nbcouverts,
+                {'attr': {'class': 'input',
+                'placeholder': 'Nombre de couverts'}}
+                )
+                }}
+            </div>
+            <div class="row">
+                <i class="far fa-user"></i>
+                {{
+                form_widget(form.date,
+                {'attr': {'class': 'Date de réservation',
+                'placeholder': ''}}
+                )
+                }}
+            </div>
+            <div class="row">
+                <i class="far fa-user"></i>
+                {{
+                form_widget(form.heure,
+                {'attr': {'class': 'Heure de réservation',
+                'placeholder': ''}}
+                )
+                }}
+            </div>
+        </div>
+
+        {{ form_widget(form.save,{'attr': {'class': 'btn'}}) }}
+    </div>
+    {{ form_end(form) }}
 </section>
 
 {% endblock %}
