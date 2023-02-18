@@ -1,12 +1,12 @@
 {% extends "base.html.twig" %}
 {% block body %}
-{{ form_start(form,{'attr': {'style': 'margin-top: 10em;'}}) }}
+{{ form_start(form,{'attr': {'style': ''}}) }}
 <div class="my-custom-class-for-errors">
     {{ form_errors(form) }}
 </div>
-<section id="Connexion" style>
+<section id="Connexion">
 
-    <div class="container">
+    <div class="container"style="margin: auto">
         <div>
             <a href="/">
                 <h1>Connectez vous ou créer un compte</h1>
@@ -17,6 +17,8 @@
 
         {% endblock %}
         
+        {{ form_widget(form.save,{'attr': {'class': 'btn'}}) }}
+
         <div class="tab-footer">
             <a class="tab-link" href="/connexion">Connexion</a>
             <a class="tab-link" href="/inscription">Inscription</a>

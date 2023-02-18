@@ -27,6 +27,16 @@ h1{
     color: #FF7116;
     text-align: center;
 }
+
+h2{
+    color:#1B8E92 ;
+    text-align: center;
+}
+
+p{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 25px;
+}
 header {
     display: flex;
     align-items: center;
@@ -96,35 +106,15 @@ header {
 }
 
 /* home CSS */
-#A-propos {
-    margin-top: 50px;
+#apropos {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     margin-left: 6%;
     margin-right: 6%;
     height: calc(100vh - 50px);
     justify-content: space-between;
-    background-color: antiquewhite;
-}
-#A-propos .left {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: aquamarine;
-    border-radius: 6%;
-}
-#A-propos .left h4 {
-    font-size: 20px;
-    color: #27ae60;
-}
-#A-propos .left h1 {
-    font-size: 40px;
-}
-#A-propos .left p {
-    font-size: 12px;
-    color: #999;
+
 }
 
 .button{
@@ -161,21 +151,6 @@ header {
 
 .button:hover{
     letter-spacing: 1px;
-}
-
-#A-propos .right {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#A-propos .right img {
-    width: 100%;
-    animation: animate 2s linear;
-    transition: 0.5s;
-    border-radius: 10%;
-    border: 10px #fff;
 }
 
 /* animation image */
@@ -277,9 +252,9 @@ header {
     background-color: #27ae60;
 }
 
-/* about us CSS */
+/* apropos CSS */
 
-#about_us {
+#apropos {
     display: flex;
     align-items: center;
     height: calc(100vh - 50px);
@@ -287,47 +262,6 @@ header {
     padding: 50px 10%;
     width: 100%;
 }
-.about {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    height: 70vh;
-}
-.about .left {
-     width: 40%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     height: 100vh;
-}
-.about .left img {
-    width: 90%;
-}
-.about .right {
-    width: 60%;
-}
-.about .right h3 {
-    font-size:35px;
-    color: #273e60;
-    margin: 10px 0;
-}
-.about .right p {
-    font-size: 14px ;
-    color: #999;
-}
-.about .right button {
-    margin: 20px 0;
-    padding: 5px 60px;
-    background-color: #27ae60;
-    border: 0;
-}
-.about .right button a{
-    color: #fff;
-    text-decoration: 0;
-    font-weight: bolder;
-}
- 
 /* footer CSS */
 
 footer {
@@ -392,28 +326,7 @@ hr {
     header {
         padding: 0 20px;
     }
-    #home {
-        flex-direction: column;
-        padding: 12px;
-        height: fit-content;
-
-    }
-    #home .left , #home .right  {
-        width: 100%;
-        padding: 0;
-    }
-    #home .left {
-        margin: 100px 0;
-    }
-    #home .left h1 {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-    #home .left h4 {
-        font-size: 15px;
-    }
-    #home .left p {
-        font-size: 15px;
+    
     }
     #plats .dishes .dish {
         width: 100%;
@@ -423,34 +336,11 @@ hr {
         width: 100%;
         max-width: 260px;
     }
-    #about_us {
+    #apropos {
         padding: 10px ;
         height: auto;
     }
-    #about_us .about {
-        flex-direction: column;
-       height: fit-content;
-    }
-    #about_us .left , #about_us .right {
-        width: 100%;
-    }
-    #about_us .left {
-        height: fit-content;
-    }
-    #about_us .left img {
-        width: 50%;
-    }
-    #about_us .right {
-        text-align: center;
-        padding: 20px;
-    }
-    .comment_section {
-        height: auto;
-    }
-    .comment_section .comments  .comment{
-        width: 100%;
-        margin-top: 20px;
-    }
+ 
     .services_list .service {
         padding: 0 50px;
     }
@@ -510,9 +400,11 @@ hr {
         margin: 15px 0;
     }
 
-}
 
 
+    #carte{
+        background-color: #1B8E92;
+    }
 /*Connexion*/
 
 .container {
@@ -527,23 +419,7 @@ hr {
     font-size: 18px;
     font-family: 'Poppins', sans-serif; 
   }
-  
-  .logo {
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    box-shadow: 0 5px 5px #ccc;
-    font-size: 1.8em;
-    background-color: #6ba1f9;
-    color: #f0f6fb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   
   .tab-body {
     position: relative;
@@ -552,7 +428,6 @@ hr {
     height: auto;
     max-height: 350px;
     padding: 15% 5%;
-    margin-top: 20%;
     background-color: #fff;
     color: #1B8E92;
     box-shadow: 0px 5px 10px #7c8395;

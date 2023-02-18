@@ -1,51 +1,120 @@
 {% extends "base.html.twig" %}
+
 {% block body %}
-<ol class="list-group list-group-numbered">
+<section id="carte">
+  <table class="table">
 
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <div class="fw-bold">Entrées au choix</div>
-        Salade
-        Verrines aux crevettes
-        Soupe maison
-        Légumes sautés
-      </div>
-      <span class="badge bg-primary rounded-pill">14€</span>
-    </li>
+    <thead class="table-light">
+      <tr>
+        <h2>Entrées</h2>
+        <th scope="col">Plat</th>
+        <th scope="col">Ingrédient</th>
+      <th scope="col">Prix</th>
+        </th>
+      </tr>
+    </thead>
 
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <div class="fw-bold">Plats au choix</div>
-       Viande avec ses Légumes
-       Poissons grillés et purée
-       
-      </div>
-      <span class="badge bg-primary rounded-pill">25€</span>
-    </li>
+    <tbody>
+      <th scope="col">Salade César</th>
+      <th scope="col">Salade, tomage, fromage, poulet</th>
+    <th scope="col">15€</th>
+    </tbody>
+    <tbody>
+      <th scope="col">Soupe</th>
+      <th scope="col">légumes de saison, crème fraiche</th>
+    <th scope="col">18€</th>
+    </tbody>
+    <tbody>
+      <th scope="col">8 Tapas aux fruits de mer</th>
+      <th scope="col">Crevettes, moules, saumon, thon</th>
+    <th scope="col">20€</th>
+    </tbody>
+  </table>
 
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-      <div class="ms-2 me-auto">
-        <div class="fw-bold">Desserts</div>
-        Tiramisu aux fraises
-      </div>
-      <span class="badge bg-primary rounded-pill">14</span>
-    </li>
 
-    <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Vins blanc</div>
-          Vin blanc (toutes régions)
-        </div>
-        <span class="badge bg-primary rounded-pill">29€</span>
-      </li>
+  <table class="table2">
 
-      <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Vins rouge</div>
-          Vin rouge (toutes régions)
-        </div>
-        <span class="badge bg-primary rounded-pill">29€</span>
-      </li>
+    <thead class="table-light">
+      <tr>
+        <h2>Plats</h2>
+        <th scope="col">Plat</th>
+        <th scope="col">Ingrédient</th>
+      <th scope="col">Prix</th>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <th scope="col">Lasagnes</th>
+      <th scope="col">Viande 100% française, lasagnes italienne maison, fromage, sauce tomate maison</th>
+    <th scope="col">25€</th>
+    </tbody>
+    <tbody>
+      <th scope="col">Saumons</th>
+      <th scope="col">Saumon frais accompagné de purée et salade</th>
+    <th scope="col">25€</th>
+    </tbody>
+    <tbody>
+      <th scope="col">Raclette</th>
+      <th scope="col">Raclette, charcuterie locale, salade</th>
+    <th scope="col">28€</th>
+    </tbody>
+  </table>
 
-  </ol>
+  <table class="table2">
+
+    <thead class="table-light">
+      <tr>
+        <h2>Desserts</h2>
+        <th scope="col">Dessert</th>
+        <th scope="col">Ingrédient</th>
+      <th scope="col">Prix</th>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <th scope="col">Tiramisu</th>
+      <th scope="col">Fraises, speculos</th>
+    <th scope="col">10€</th>
+    </tbody>
+    <tbody>
+      <th scope="col">Café/thé gourmand</th>
+      <th scope="col">Mélange de desserts en format mini et thé/Café</th>
+    <th scope="col">15€</th>
+    </tbody>
+    <tbody>
+      <th scope="col">Fondant au chocolat</th>
+      <th scope="col">Chocola</th>
+    <th scope="col">8€</th>
+    </tbody>
+  </table>
+  <table class="table2">
+
+    <thead class="table-light">
+      <tr>
+        <h2>Boissons</h2>
+        <th scope="col">Boisson</th>
+        <th scope="col">Spécificités</th>
+      <th scope="col">Prix</th>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <th scope="col">Limonde</th>
+      <th scope="col"></th>
+    <th scope="col">8€</th>
+
+    </tbody>
+    <tbody>
+      <th scope="col">Vins régionaux</th>
+      <th scope="col">De bordeaux, blanc, rouge,</th>
+    <th scope="col">35€</th>
+    </tbody>
+    <tbody>
+      <th scope="col">Champagne</th>
+      <th scope="col"></th>
+    <th scope="col">25€</th>
+    </tbody>
+  </table>
+
+</section>
 {% endblock %}

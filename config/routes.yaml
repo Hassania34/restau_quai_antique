@@ -1,7 +1,3 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
-
 app_restau_quai_antique:
     path: /
     controller: App\Controller\AccueilController::accueil
@@ -20,3 +16,6 @@ utilisateur_inscription:
 utilisateur_connexion:
     path: /connexion
     controller: App\Controller\UtilisateurController::connexion 
+utilisateur_deconnexion:
+    path: /deconnexion
+    controller: App\Controller\UtilisateurController::deconnexion            
