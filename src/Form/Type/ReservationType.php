@@ -11,13 +11,15 @@ class ReservationType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('mail', EmailType::class)
-            ->add('password', PasswordType::class)
+            ->add('nbcouvert', IntegerType::class)
+            ->add('date', DateType::class)
+            ->add('heure', TimeType::class)
+            ->add('allergies', TextareaType::class)
             ->add('save', SubmitType::class)
         ;
     }
 
-    public function configureOptions(OptionsResolver $resolver): void
+    // public function configureOptions(OptionsResolver $resolver): void
     // {
     //     $resolver->setDefaults([
     //         // Configure your form options here
