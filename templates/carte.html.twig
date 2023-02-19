@@ -1,120 +1,164 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-<section id="carte">
-  <table class="table">
 
-    <thead class="table-light">
-      <tr>
-        <h2>Entrées</h2>
-        <th scope="col">Plat</th>
-        <th scope="col">Ingrédient</th>
-      <th scope="col">Prix</th>
-        </th>
-      </tr>
-    </thead>
+<div>
+  <h1>Notre carte</h1>
+  <p>Découvrez, à travers cette carte nos entrées, nos plats, desserts et boissons.</p>
+</div>
 
-    <tbody>
-      <th scope="col">Salade César</th>
-      <th scope="col">Salade, tomage, fromage, poulet</th>
-    <th scope="col">15€</th>
-    </tbody>
-    <tbody>
-      <th scope="col">Soupe</th>
-      <th scope="col">légumes de saison, crème fraiche</th>
-    <th scope="col">18€</th>
-    </tbody>
-    <tbody>
-      <th scope="col">8 Tapas aux fruits de mer</th>
-      <th scope="col">Crevettes, moules, saumon, thon</th>
-    <th scope="col">20€</th>
-    </tbody>
-  </table>
+   <div class="container text-center">
+    <h2>Entrées</h2>
+    
+    <div class="row">
+      <div class="col">
+        Salade
+      </div>
+      <div class="col">
+        13€
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        Soupe aux légumes de saison
+      </div>
+      <div class="col">
+        14€
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col">
+        Verrines
+      </div>
+      <div class="col">
+        14€
+      </div>
+    </div>
 
-  <table class="table2">
+    <div class="row">
+      <div class="col">
+        Tapas
+      </div>
+      <div class="col">
+        14€
+      </div>
+    </div>
+  </div>
 
-    <thead class="table-light">
-      <tr>
-        <h2>Plats</h2>
-        <th scope="col">Plat</th>
-        <th scope="col">Ingrédient</th>
-      <th scope="col">Prix</th>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <th scope="col">Lasagnes</th>
-      <th scope="col">Viande 100% française, lasagnes italienne maison, fromage, sauce tomate maison</th>
-    <th scope="col">25€</th>
-    </tbody>
-    <tbody>
-      <th scope="col">Saumons</th>
-      <th scope="col">Saumon frais accompagné de purée et salade</th>
-    <th scope="col">25€</th>
-    </tbody>
-    <tbody>
-      <th scope="col">Raclette</th>
-      <th scope="col">Raclette, charcuterie locale, salade</th>
-    <th scope="col">28€</th>
-    </tbody>
-  </table>
+  <div class="container text-center">
+    <h2>Plats</h2>
+    
+    <div class="row">
+      <div class="col">
+      Lasagnes
+      </div>
+      <div class="col">
+        13€
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        Souris d'agneau
+      </div>
+      <div class="col">
+        14€
+      </div>
+    </div>
 
-  <table class="table2">
+    <div class="row">
+      <div class="col">
+      Pâtes
+      </div>
+      <div class="col">
+        14€
+      </div>
+    </div>
 
-    <thead class="table-light">
-      <tr>
-        <h2>Desserts</h2>
-        <th scope="col">Dessert</th>
-        <th scope="col">Ingrédient</th>
-      <th scope="col">Prix</th>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <th scope="col">Tiramisu</th>
-      <th scope="col">Fraises, speculos</th>
-    <th scope="col">10€</th>
-    </tbody>
-    <tbody>
-      <th scope="col">Café/thé gourmand</th>
-      <th scope="col">Mélange de desserts en format mini et thé/Café</th>
-    <th scope="col">15€</th>
-    </tbody>
-    <tbody>
-      <th scope="col">Fondant au chocolat</th>
-      <th scope="col">Chocola</th>
-    <th scope="col">8€</th>
-    </tbody>
-  </table>
-  <table class="table2">
+    <div class="row">
+      <div class="col">
+      Plateau de charcuterie
+      </div>
+      <div class="col">
+        14€
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <h2>Boissons</h2>
+    
+    <div class="row">
+      <div class="col">
+    Boisson gaseuse
+      </div>
+      <div class="col">
+        5€
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        Sirop
+      </div>
+      <div class="col">
+        8€
+      </div>
+    </div>
 
-    <thead class="table-light">
-      <tr>
-        <h2>Boissons</h2>
-        <th scope="col">Boisson</th>
-        <th scope="col">Spécificités</th>
-      <th scope="col">Prix</th>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <th scope="col">Limonde</th>
-      <th scope="col"></th>
-    <th scope="col">8€</th>
+    <div class="row">
+      <div class="col">
+      Champagne (toutes sortes)
+      </div>
+      <div class="col">
+        20€ la bouteille
+      </div>
+    </div>
 
-    </tbody>
-    <tbody>
-      <th scope="col">Vins régionaux</th>
-      <th scope="col">De bordeaux, blanc, rouge,</th>
-    <th scope="col">35€</th>
-    </tbody>
-    <tbody>
-      <th scope="col">Champagne</th>
-      <th scope="col"></th>
-    <th scope="col">25€</th>
-    </tbody>
-  </table>
+    <div class="row">
+      <div class="col">
+     Vin (toutes sortes)
+      </div>
+      <div class="col">
+        35€ la bouteille
+      </div>
+    </div>
+  </div>
 
-</section>
+  <div class="container text-center">
+    <h2>desserts</h2>
+    
+    <div class="row">
+      <div class="col">
+   Tiramisu aux fraises
+      </div>
+      <div class="col">
+        8€
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+      Café gourmand ou thé gourmand
+      </div>
+      <div class="col">
+        13€
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+     Fondant au chocalat
+      </div>
+      <div class="col">
+        14€
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+    Crèmes brulées
+      </div>
+      <div class="col">
+        15€
+      </div>
+    </div>
+  </div>
 {% endblock %}
