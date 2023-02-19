@@ -18,7 +18,7 @@ class CarteController extends AbstractController
             ]);
         }
         return $this->render('carte.html.twig', [
-            'utilisateur' => $utilisateur->getUsername()
+            'username' => $utilisateur->getUsername()
         ]);
         return $this->render('carte.html.twig');
     }

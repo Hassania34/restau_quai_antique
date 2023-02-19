@@ -10,6 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Psr\Log\LoggerInterface;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 
 class UtilisateurController extends AbstractController
@@ -25,7 +26,7 @@ class UtilisateurController extends AbstractController
         // $this->session = $requestStack->getSession();
     }
 
-    public function inscription(Request $request,LoggerInterface $logger,ManagerRegistry $doctrine): Response
+    public function inscription(Request $request,LoggerInterface $logger,ManagerRegistry $doctrine,UserPasswordHasherInterface $passwordHasher): Response
     {
         // just set up a fresh $utilisateur object (remove the example data)
         $utilisateur = new Utilisateur();
@@ -37,6 +38,12 @@ class UtilisateurController extends AbstractController
             // $form->getData() holds the submitted values
             // but, the original `$utilisateur` variable has also been updated
             $utilisateur = $form->getData();
+
+            // $hashedPassword = $passwordHasher->hashPassword(
+            //     $utilisateur,
+            //     $utilisateur->getPassword()
+            // );
+            // $utilisateur->setPassword($hashedPassword);
 
             $entityManager = $doctrine->getManager();
 
@@ -54,7 +61,7 @@ class UtilisateurController extends AbstractController
         ]);
     }
 
-    public function connexion(Request $request,ManagerRegistry $doctrine): Response
+    public function connexion(Request $request,ManagerRegistry $doctrine,UserPasswordHasherInterface $passwordHasher): Response
     {
         // just set up a fresh $utilisateur object (remove the example data)
         $utilisateur_form = new Utilisateur();
@@ -67,6 +74,10 @@ class UtilisateurController extends AbstractController
             // $form->getData() holds the submitted values
             // but, the original `$utilisateur_form` variable has also been updated
             $utilisateur_form = $form->getData();
+            // $hashedPassword = $passwordHasher->hashPassword(
+            //     $utilisateur_form,
+            //     $utilisateur_form->getPassword()
+            // );
 
             $utilisateur = $doctrine->getRepository(Utilisateur::class)->findOneBy(array('mail'=>$utilisateur_form->getMail(),'password'=>$utilisateur_form->getPassword()));
 
@@ -93,6 +104,19 @@ class UtilisateurController extends AbstractController
         $session = $request->getSession();
         $utilisateur = $session->remove('utilisateur');
 
-        return $this->render('accueil.html.twig');
+        return $this->redirectToRoute('app_restau_quai_antique');
+    }
+
+    public function profil(Request $request,LoggerInterface $logger): Response
+    {
+        $session = $request->getSession();
+        $utilisateur = $session->get('utilisateur');
+
+        return $this->render('utilisateur/profil.html.twig', [
+            'id' => $utilisateur->getId(),
+            'username' => $utilisateur->getUsername(),
+            'mail' => $utilisateur->getMail(),
+            'password' => $utilisateur->getPassword()
+        ]);
     }
 }

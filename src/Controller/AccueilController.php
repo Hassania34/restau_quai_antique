@@ -30,8 +30,13 @@ class AccueilController extends AbstractController
             return $this->render('accueil.html.twig');
         }
 
+        if (!in_array("ROLE_ADMIN", $utilisateur->getRoles())) {
+            return $this->render('accueil.html.twig', [
+                'username' => $utilisateur->getUsername()
+            ]);        }
         return $this->render('accueil.html.twig', [
-            'utilisateur' => $utilisateur->getUsername()
+            'username' => $utilisateur->getUsername(),
+            'admin' => true
         ]);
     }
 }

@@ -18,4 +18,10 @@ utilisateur_connexion:
     controller: App\Controller\UtilisateurController::connexion 
 utilisateur_deconnexion:
     path: /deconnexion
-    controller: App\Controller\UtilisateurController::deconnexion            
+    controller: App\Controller\UtilisateurController::deconnexion       
+utilisateur_profil:
+    path: /profil
+    controller: App\Controller\UtilisateurController::profil   
+admin:
+    path: /admin
+    controller: App\Controller\AdminController::index          

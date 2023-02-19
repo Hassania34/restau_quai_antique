@@ -9,15 +9,18 @@
         <li><a href="/#plats">Plats</a></li>
         <li><a href="/#les-menus">Les menus</a></li>
         <li><a href="/carte">Carte</a></li>
-        {% if utilisateur is defined %}
+        {% if username is defined %}
         <li><a href="/reserver">Reserver</a></li>
         {% endif %}
-        {% if utilisateur is not defined %}
+        {% if username is not defined %}
             <li><a href="/connexion">Connexion</a></li>
         {% endif %}
-        {% if utilisateur is defined %}
-            <li><a href="#">Bonjour {{ utilisateur }}</a></li>
-            <li><a href="/deconnexion">DéConnexion</a></li>
+        {% if username is defined %}
+        <li><a href="/profil">Bonjour {{ username }}</a></li>
+        {% if admin is defined %}
+        <li><a href="/admin">Admin</a></li>
+        {% endif %}
+        <li><a href="/deconnexion">DéConnexion</a></li>
         {% endif %}
     </ul>
 
