@@ -17,6 +17,9 @@ class Table
     #[ORM\Column]
     private ?int $numéro = null;
 
+    #[ORM\Column]
+    private ?int $type = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -30,6 +33,18 @@ class Table
     public function setNuméro(int $numéro): self
     {
         $this->numéro = $numéro;
+
+        return $this;
+    }
+
+    public function getType(): ?int
+    {
+        return $this->type;
+    }
+
+    public function setType(int $type): self
+    {
+        $this->type = $type;
 
         return $this;
     }

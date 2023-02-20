@@ -1,32 +1,16 @@
 <section id="plats">
-    <h4 class="mini_title">Nos plats</h4>
+    <h4 class="mini_title">Nos plats Coucou</h4>
     <h2 class="title">Incontournables</h2>
     <div class="dishes">
+        {% for plat in plats %}
         <div class="dish">
-            <img src="{{ asset('images/Plats/1.png')}}">
+            <img src="{{ asset(''~plat.image~'')}}">
             <img src="{{ asset('images/logo.png') }}" alt="Symfony!" />
-            <p>Lasagnes</p>
-            <h2>Les lasagnes à toutes les sauces</h2>
+            <p>{{plat.libelle}}</p>
+            <h2>{{plat.description}}</h2>
             <a href="/reserver"S>Réserver</a>
         </div>
-        <div class="dish">
-            <img src="{{ asset('images/Plats/2.png')}}">
-            <p>Souris d'agneau</p>
-            <h2>Cuite pendant 8h dans du vin</h2>
-            <a href="/reserver"S>Reserver</a>
-        </div>
-        <div class="dish">
-            <img src="{{ asset('images/Plats/3.png')}}">
-            <p>La raclette</p>
-            <h2>charcuteries françaises</h2>
-            <a href="/reserver"S>Réserver</a>
-        </div>
-        <div class="dish">
-            <img src="{{ asset('images/Plats/4.png')}}">
-            <p>Variétés de poissons</p>
-            <h2>Saumons, colin, </h2>
-            <a href="/reserver"S>Réserver</a>
-        </div>
+        {% endfor %}
     </div>
-    </div>
+</div>
 </section>

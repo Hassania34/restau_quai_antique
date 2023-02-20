@@ -25,7 +25,7 @@ class ReservationController extends AbstractController
         }
         return $this->renderForm('reservation.html.twig', [
             'form' => $form,
-            'utilisateur' => $utilisateur->getUsername()
+            'username' => $utilisateur->getUsername()
         ]);
     }
   
