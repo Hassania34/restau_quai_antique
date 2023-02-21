@@ -67,3 +67,7 @@ php bin/console make:admin:crud
 # Génération du dashboard admin
 symfony console make:admin:dashboard
 ```
+
+#Installation de heroku
+ ```composer create-project symfony/website-skeleton symfony-heroku/ 
+ ```
