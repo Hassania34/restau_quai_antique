@@ -68,6 +68,9 @@ php bin/console make:admin:crud
 symfony console make:admin:dashboard
 ```
 
-#Installation de heroku
- ```composer create-project symfony/website-skeleton symfony-heroku/ 
+#pour déployer le site sur Netlify
+ ```[[redirects]]
+from = "/*"
+to = "/"
+status = 200
  ```
